@@ -1,7 +1,23 @@
-#ifndef IAMATERIASOURCE_HPP
-# define IAMATERIASOURCE_HPP
+#include "IMateriaSource.hpp"
 
-# include <string>
-# include <iostream>
-
-#endif
+IMateriaSource::IMateriaSource()
+{
+	std::cout << "\033[31m" << "Icharacter costructor" << "\033[0m" << std::endl;
+}
+IMateriaSource::IMateriaSource(const IMateriaSource &org)
+{
+	std::cout << "\033[31m" << "Icharacter cloner" << "\033[0m" << std::endl;
+}
+IMateriaSource &IMateriaSource::operator=(const IMateriaSource & org)
+{
+	std::cout << "\033[31m" << "Icharacter operator" << "\033[0m" << std::endl;
+	return(*this);
+}
+IMateriaSource::~IMateriaSource()
+{
+	std::cout << "\033[31m" << "Icharacter destructor" << "\033[0m" << std::endl;
+}
+void IMateriaSource::learnMateria(AMateria*)
+{}
+AMateria* IMateriaSource::createMateria(std::string const & type)
+{}

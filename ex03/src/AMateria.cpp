@@ -29,7 +29,8 @@ std::string const & AMateria::getType() const
 }
 AMateria* AMateria::clone() const
 {return (NULL);}
-//void AMateria::use(ICharacter& target)
-//{
-//	std::cout << target.getname() << "have nothing to use" << std::endl;
-//}
+
+void AMateria::use(ICharacter& target)
+{
+	std::cout << target.getname() << "have nothing to use" << std::endl;
+}

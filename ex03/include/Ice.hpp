@@ -17,7 +17,7 @@ public:
 
 	Ice &operator=(const Ice &ori);
 	Ice *clone() const;
-	//void use(ICharacter& target);
+	void use(ICharacter& target);
 };
 
 #endif
