@@ -5,6 +5,8 @@
 # include <iostream>
 # include "ICharacter.hpp"
 
+class ICharacter;
+
 class AMateria
 {
 protected:
@@ -13,6 +15,7 @@ public:
 	AMateria(std::string const & type);
 	AMateria();
 	AMateria(const AMateria &origin);
+	virtual ~AMateria();
 
 	AMateria &operator=(const AMateria &origin);
 

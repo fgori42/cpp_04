@@ -1,7 +1,7 @@
 SRC = ./src/
 INCLUDE = ./include
 
-file = $(addprefix $(SRC), Main.cpp AMateria.cpp Ice.cpp)
+file = $(addprefix $(SRC), Main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp IMateriaSource.cpp MateriaSource.cpp)
 
 NAME = World_on_fire
 

@@ -32,5 +32,7 @@ AMateria* AMateria::clone() const
 
 void AMateria::use(ICharacter& target)
 {
-	std::cout << target.getname() << "have nothing to use" << std::endl;
+	std::cout << target.getName() << "have nothing to use" << std::endl;
 }
+
+AMateria::~AMateria() {}

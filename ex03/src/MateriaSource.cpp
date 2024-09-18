@@ -1,13 +1,13 @@
 #include "MateriaSource.hpp"
 
-MateriaSource::MateriaSource()
+MateriaSource::MateriaSource() /*: IMateriaSource()*/
 {
 	for (int i; i < 4; i++)
 		knowledge[i] = NULL;
 	std::cout << "\033[36m" << "MateriaSource costructor" << "\033[0m" << std::endl;
 }
 
-MateriaSource::MateriaSource(const MateriaSource &org)
+MateriaSource::MateriaSource(const MateriaSource &org) /*: IMateriaSource()*/
 {
 	for (int i; i < 4; i++)
 		knowledge[i] = org.knowledge[i]->clone();
@@ -23,6 +23,7 @@ MateriaSource &MateriaSource::operator=(const MateriaSource & org)
 				knowledge[i] = org.knowledge[i]->clone();
 	}
 	std::cout << "\033[36m" << "MateriaSource operator" << "\033[0m" << std::endl;
+	return (*this);
 }
 MateriaSource::~MateriaSource()
 {

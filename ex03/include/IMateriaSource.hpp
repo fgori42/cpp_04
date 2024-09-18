@@ -8,11 +8,11 @@
 class IMateriaSource
 {
 protected:
-	IMateriaSource();
-	IMateriaSource(const IMateriaSource &org);
-	IMateriaSource &operator=(const IMateriaSource & org);
+	//IMateriaSource();
+	//IMateriaSource(const IMateriaSource &org);
+	//IMateriaSource &operator=(const IMateriaSource & org);
 public:
-	virtual ~IMateriaSource() {}
+	virtual ~IMateriaSource();
 	virtual void learnMateria(AMateria*) = 0;
 	virtual AMateria* createMateria(std::string const & type) = 0;
 };
