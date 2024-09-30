@@ -8,9 +8,6 @@
 class IMateriaSource
 {
 protected:
-	//IMateriaSource();
-	//IMateriaSource(const IMateriaSource &org);
-	//IMateriaSource &operator=(const IMateriaSource & org);
 public:
 	virtual ~IMateriaSource();
 	virtual void learnMateria(AMateria*) = 0;

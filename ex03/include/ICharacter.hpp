@@ -11,10 +11,7 @@ class ICharacter
 {
 protected:
 public:
-	//ICharacter();
 	virtual ~ICharacter() {};
-	//ICharacter(const ICharacter &org);
-	//virtual ICharacter &operator=(const ICharacter &org);
 
 	virtual std::string const & getName() const = 0;
 	virtual void equip(AMateria* m) = 0;

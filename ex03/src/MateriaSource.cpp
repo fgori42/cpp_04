@@ -2,14 +2,14 @@
 
 MateriaSource::MateriaSource() /*: IMateriaSource()*/
 {
-	for (int i; i < 4; i++)
+	for (int i = 0; i < 4; i++)
 		knowledge[i] = NULL;
 	std::cout << "\033[36m" << "MateriaSource costructor" << "\033[0m" << std::endl;
 }
 
 MateriaSource::MateriaSource(const MateriaSource &org) /*: IMateriaSource()*/
 {
-	for (int i; i < 4; i++)
+	for (int i = 0; i < 4; i++)
 		knowledge[i] = org.knowledge[i]->clone();
 	std::cout << "\033[36m" << "MateriaSource clone" << "\033[0m" << std::endl;
 }
@@ -27,7 +27,7 @@ MateriaSource &MateriaSource::operator=(const MateriaSource & org)
 }
 MateriaSource::~MateriaSource()
 {
-	for (int i; i < 4; i++)
+	for (int i = 0; i < 4; i++)
 		if (knowledge[i])
 			delete (knowledge[i]);
 	std::cout << "\033[36m" << "MateriaSource destructor" << "\033[0m" << std::endl;

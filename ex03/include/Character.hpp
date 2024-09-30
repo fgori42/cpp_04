@@ -13,7 +13,6 @@ private:
 	AMateria *floor[100];
 
 public:
-	Character();
 	Character(std::string name);
 	~Character();
 	Character(const Character &org);
@@ -22,7 +21,7 @@ public:
 	std::string const & getName() const;
 	void equip(AMateria* m);
 	void unequip(int idx);
-	void use(int idx, Character& target);
+	void use(int idx, ICharacter& target);
 };
 
 
